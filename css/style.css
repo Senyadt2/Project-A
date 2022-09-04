@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+body,ul{
+    margin: 0;
+}
+header{
+    position: fixed;
+    justify-content: space-between;
+    display: flex;
+    padding:20px;
+    width: 100%;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+}
+.container{
+    width: 100%;
+}
+.sidebar{
+    z-index: -1;
+    margin: 0;
+    width: 60px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    background-color: blue;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+.side-icons{
+    margin: 10px 0;
+}
