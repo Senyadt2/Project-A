@@ -5,8 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css">
+    <script type="text/javascript" src="js/jquery.pagepiling.js"></script>
+        <script type="text/javascript">
+            var deleteLog = false;
+
+            $(document).ready(function() {
+                $('#pagepiling').pagepiling();
+            });
+        </script>
 </head>
 <body>
     <header>
@@ -14,11 +26,27 @@
         <button>Login</button>
     </header>
     <div class="sidebar">
-        <i class="fa-sharp fa-solid fa-house side-icons"></i>
-        <i class="fa-sharp fa-solid fa-house side-icons"></i>
-        <i class="fa-sharp fa-solid fa-calendar side-icons"></i>
+        <i class="fa-sharp fa-solid fa-house side-icons"></i><span class="fa-solid hide t-home">Home</span>
+        <i class="fa-sharp fa-solid fa-scroll side-icons"></i><span class="fa-solid hide t-assignment">Assignments</span>
+        <i class="fa-sharp fa-solid fa-calendar side-icons"></i><span class="fa-solid hide t-calendar">Calendar</span>
     </div>
-    <div class="container">
-    </div>
+    <div id="pagepiling">
+	    <div class="section" id="section1">
+	    	<button onclick="" class="explore">Explore</button>
+	    </div>
+	    <div class="section" id="section2">
+	    	<div class="assignments">
+	    		<h1>WEB Technology </h1>
+	    		<p>2 days remaingin</p>
+	    	</div>
+	    </div>
+	    <div class="section" id="section3">
+	    	<div class="intro">
+	    		<h1>Just terrific!</h1>
+	    		<p>Use the power of images</p>
+	    	</div>
+	    </div>
+	</div>
 </body>
+<script src="js/script.js"></script>
 </html>
