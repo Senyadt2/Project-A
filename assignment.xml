@@ -5,14 +5,4 @@
         <date mm="2" dd = "2" yy = "2002"></date>
         <filelink>file link here</filelink>
     </work>
-    <work>
-        <subject>Web Technology</subject>
-        <date mm="2" dd = "2" yy = "2002"></date>
-        <filelink>file link here</filelink>
-    </work>
-    <work>
-        <subject>Web Technology</subject>
-        <date mm="2" dd = "2" yy = "2002"></date>
-        <filelink>file link here</filelink>
-    </work>
 </assignmnets>
