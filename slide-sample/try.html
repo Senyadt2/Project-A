@@ -1,0 +1,103 @@
+<html>
+    <head>
+
+        <title>login2</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <div class="header">
+        
+              <div id="btn"><h1>Assignment-Deadline</h1></div>
+               <button type="button" class="toggle-btn" onclick="web()">Web</button>
+               <button type="button" class="toggle-btn" onclick="java()">Java</button>
+               <button type="button" class="toggle-btn" onclick="pro()">pro</button>
+               <button type="button" class="toggle-btn" onclick="sad()">SAD</button>
+               <button type="button" class="toggle-btn" onclick="dsa()">DSA</button>
+              
+            
+              <div class="containder">
+            <form id="web" class="input-group">
+              <h1>Web</h1>
+              <p>9days left</p>
+              
+             -
+            </form>
+            <span id="java" class="input-group">
+              <h1>Java</h1>
+              <p>10dyas left</p>
+              
+            </span>
+            <span id="pro" class="input-group">
+              <h1>Prob</h1>
+              <p>12days left</p>
+            </span>
+        
+        <span id="sad" class="input-group">
+          <h1>Sad</h1>
+          <p>14days left</p>
+        </span>
+        <span id="dsa" class="input-group">
+            <h1>Dsa</h1>
+            <p>16days left</p>
+        </span>
+    </div>
+</div>
+
+          </div>
+          
+         </div>
+        <script>                          /*silde hune kam yesle garauxha*/
+          var x=document.getElementById("web");
+          var y=document.getElementById("java");
+          var z=document.getElementById("pro");
+          var s=document.getElementById("sad");
+          var d=document.getElementById("dsa");
+          var a=400;         <!--50 px for main-->
+          function java()
+          {
+            x.style.left=-a+"px";
+            y.style.left="50px";
+            z.style.left="400px";
+            s.style.left="800px";
+            d.style.left="1200px";
+
+          }
+          function web()
+          {
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="850px";
+            s.style.left="1200px";
+            d.style.left="1600px";
+
+
+          }
+          function pro()
+          {
+            x.style.left="-800px";
+            y.style.left="-400px";
+            z.style.left="50px";
+            s.style.left="400px";
+            d.style.left="800px";
+          }
+          function sad()
+          {
+            x.style.left="-1200px";
+            y.style.left="-800px";
+            z.style.left="-450px";
+            s.style.left="50px";  
+            d.style.left="400px";  
+          }
+          function dsa()
+          {
+            x.style.left="-1600px";
+            y.style.left="-1200px";
+            z.style.left="-800px";
+            s.style.left="-400px";
+            d.style.left="50px";
+
+          }
+        </script>
+  
+    </body>
+</html>

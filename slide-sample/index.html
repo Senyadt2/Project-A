@@ -1,0 +1,45 @@
+<html>
+    <head>
+    <title>Slide</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="box">
+
+            <p>Hello</p>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            <div class="container">
+                <div id="login" class="i-g"><h1>Web Tech</h1></div>
+                <div id="register" class="i-g"><h1>OOP in JAVA</h1></div>
+                
+            </div>
+        </div>
+
+
+
+         <script>
+            var x=document.getElementById("login");
+            var y=document.getElementById("register");
+
+            function register()
+            {
+                x.style.left="-400px";
+                y.style.left="50px";
+
+            }
+            function login()
+            {
+                x.style.left="50px";
+                y.style.left="45px";
+
+            }
+         </script>
+
+
+
+
+
+    </body>
+    
+</html>
