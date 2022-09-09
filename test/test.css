@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    width: 70%;
+    height: 100%;
+    margin: auto;   
+}
+
+.input-group{
+   /*imp*/
+    position: absolute  ;
+    bottom: 30px;
+    transition: .5s;
+}
+.containder{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:80%;
+    left: 50%;
+    background-color: forestgreen;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+}
+.toggle-btn{               /*edited the log in and register */
+    padding:30px 63px;
+    cursor: pointer;    
+    background-color:transparent;
+    font-size: 15px;
+    border:0;
+    outline: none;
+    position: relative;
+}
+.header{
+    width: 100%;
+    height: 300px;
+    margin: 10px;
+    position: relative;
+    padding: 30px;
+}
+#btn{
+    position: relative;
+    left: 150px;
+}

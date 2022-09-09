@@ -18,18 +18,6 @@
         <a class="icon" href="#section2"><i class="fa-sharp fa-solid fa-scroll side-icons"></i><span class="fa-solid hide t-assignment">Assignments</span></a>
         <a class="icon" href="#section3"><i class="fa-sharp fa-solid fa-calendar side-icons"></i><span class="fa-solid hide t-calendar">Calendar</span></a>
     </div>
-    <div class="section">
-        <form action="k.php" method="post">
-        
-        <input type="text" name="n">
-             
-        <input type="email" name="e">
-             
-        <input type="password" name="p">
-             
-        <input type="submit" name="fn">
-</form>
-    </div>
     <div class="section" id="section1">
         <div class="content">
             <button onclick="#section2" class="explore">Explore</button>
@@ -38,23 +26,51 @@
 
     <div class="section" id="section2">
         <div class="content">
-            <div class="assignments">
+                <div class="ass-box">
+                <div class="button-box">
+                    <button class="wt btn">Web Tech</button>
+                    <button class="dsa btn">DSA</button>
+                    <button class="sad btn" >SAD</button>
+                    <button class="stats btn">Stats</button>
+                    <button class="java btn">JAVA</button>
+                </div>
+                <div class="wrapper">
+                    <div class="ass-content ass1">
+                        <h1>Web Tech</h1>
+                        <p>2020 / 02 / 02</p>
+                    </div>
+                    <div class="ass-content ass2">
+                        <h1>asdf</h1>
+                        <p>2020 / 02 / 02</p>
+                    </div>
+                    <div class="ass-content ass3">
+                        <h1>asdozxvhozixvh</h1>
+                        <p>2020 / 02 / 02</p>
+                    </div>
+                    <div class="ass-content ass4">
+                        <h1>uyiu</h1>
+                        <p>2020 / 02 / 02</p>
+                    </div>
+                    <div class="ass-content ass5">
+                        <h1>zxz</h1>
+                        <p>2020 / 02 / 02</p>
+                    </div>
+                </div>
+                </div>
 
-                <?php
+                <!-- <?php
                     $xml = file_get_contents('assignment.xml');
                     $xml_parse = simplexml_load_string($xml);
-                    $month_today = date("m");
-                    $day_today = date("d");
-                    $year_today = date("y");
+                    $todays_date = date("m / d / y");
+                    echo $todays_date;
                     foreach($xml_parse as $key){
                         echo "<div class = \"ass-content\">";
                         echo "<h1>" . $key->subject ."</h1>";
-                        echo $month_today . "/" . $day_today . "/" . $year_today;
                         echo "<p>" . $key->date["dd"] ."/". $key->date["mm"]."/" .$key->date["yy"] ."</p>";
                         echo "</div>";
                     }
-                    ?>
-            </div>
+                    
+                    ?> -->
         </div>
     </div>
     <div class="section" id="section3">
