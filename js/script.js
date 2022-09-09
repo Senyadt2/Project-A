@@ -11,34 +11,34 @@ var as = document.querySelectorAll(".ass-content");
 var wrap = document.querySelector(".wrapper");
 
 var btns = document.querySelectorAll(".btn");
-wt.addEventListener("click",function(){
+wt.addEventListener("mouseover",function(){
     tmp = -0 * 100;
     tmp = tmp.toString() + "%";
     wrap.style.left = tmp;
 })
-dsa.addEventListener("click",function(){
+dsa.addEventListener("mouseover",function(){
     tmp = -1 * 100;
     tmp = tmp.toString() + "%";
     wrap.style.left = tmp;
 })
-sad.addEventListener("click",function(){
+sad.addEventListener("mouseover",function(){
     tmp = -2 * 100;
     tmp = tmp.toString() + "%";
     wrap.style.left = tmp;
 })
-stats.addEventListener("click",function(){
+stats.addEventListener("mouseover",function(){
     tmp = -3 * 100;
     tmp = tmp.toString() + "%";
     wrap.style.left = tmp;
 })
-java.addEventListener("click",function(){
+java.addEventListener("mouseover",function(){
     tmp = -4 * 100;
     tmp = tmp.toString() + "%";
     wrap.style.left = tmp;
 })
 for(var b=0;b<5;b++){
     var tmp;
-    btns[b].addEventListener("click",function(){
+    btns[b].addEventListener("mouseover",function(v){
         for(var t=0;t<5;t++){
             btns[t].classList.remove("active");
         }
@@ -48,7 +48,7 @@ for(var b=0;b<5;b++){
 
 // for(var b=0;b<4;b++){
 //     var tmp;
-//     btns[b].addEventListener("click",function(){
+//     btns[b].addEventListener("click",function(b){
 //         tmp = -b * 100;
 //         tmp = tmp.toString() + "%";
 //         wrap.style.left = tmp;
