@@ -11,32 +11,41 @@ var as = document.querySelectorAll(".ass-content");
 var wrap = document.querySelector(".wrapper");
 
 var btns = document.querySelectorAll(".btn");
-
 wt.addEventListener("click",function(){
     tmp = -0 * 100;
     tmp = tmp.toString() + "%";
     wrap.style.left = tmp;
 })
-java.addEventListener("click",function(){
+dsa.addEventListener("click",function(){
     tmp = -1 * 100;
     tmp = tmp.toString() + "%";
     wrap.style.left = tmp;
 })
-stats.addEventListener("click",function(){
+sad.addEventListener("click",function(){
     tmp = -2 * 100;
     tmp = tmp.toString() + "%";
     wrap.style.left = tmp;
 })
-dsa.addEventListener("click",function(){
+stats.addEventListener("click",function(){
     tmp = -3 * 100;
     tmp = tmp.toString() + "%";
     wrap.style.left = tmp;
 })
-sad.addEventListener("click",function(){
+java.addEventListener("click",function(){
     tmp = -4 * 100;
     tmp = tmp.toString() + "%";
     wrap.style.left = tmp;
 })
+for(var b=0;b<5;b++){
+    var tmp;
+    btns[b].addEventListener("click",function(){
+        for(var t=0;t<5;t++){
+            btns[t].classList.remove("active");
+        }
+        this.classList.add("active");
+    })
+}
+
 // for(var b=0;b<4;b++){
 //     var tmp;
 //     btns[b].addEventListener("click",function(){

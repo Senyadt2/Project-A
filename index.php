@@ -28,7 +28,7 @@
         <div class="content">
                 <div class="ass-box">
                 <div class="button-box">
-                    <button class="wt btn">Web Tech</button>
+                    <button class="wt btn active">Web Tech</button>
                     <button class="dsa btn">DSA</button>
                     <button class="sad btn" >SAD</button>
                     <button class="stats btn">Stats</button>
@@ -36,11 +36,11 @@
                 </div>
                 <div class="wrapper">
                     <div class="ass-content ass1">
-                        <h1>Web Tech</h1>
+                        <h1>Web Technology</h1>
                         <p>2020 / 02 / 02</p>
                     </div>
                     <div class="ass-content ass2">
-                        <h1>asdf</h1>
+                        <h1>System Analysis<br> and Design</h1>
                         <p>2020 / 02 / 02</p>
                     </div>
                     <div class="ass-content ass3">
@@ -61,7 +61,9 @@
                 <!-- <?php
                     $xml = file_get_contents('assignment.xml');
                     $xml_parse = simplexml_load_string($xml);
-                    $todays_date = date("m / d / y");
+                    $m = date("m");
+                    $d = date("d");
+                    $y = date("y");
                     echo $todays_date;
                     foreach($xml_parse as $key){
                         echo "<div class = \"ass-content\">";
