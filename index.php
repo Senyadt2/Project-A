@@ -20,13 +20,12 @@
     </div>
     <div class="section" id="section1">
         <div class="content">
-            <button onclick="#section2" class="explore">Explore</button>
+            <button onclick="#section2" class="explore">Check your Deadlines...</button>
         </div>
     </div>
 
     <div class="section" id="section2">
         <div class="content">
-                <div class="ass-box">
                 <div class="button-box">
                     <button class="wt btn active">Web Tech</button>
                     <button class="dsa btn">DSA</button>
@@ -34,10 +33,13 @@
                     <button class="stats btn">Stats</button>
                     <button class="java btn">JAVA</button>
                 </div>
+                <div class="ass-box">
+                
                 <div class="wrapper">
                     <div class="ass-content ass1">
+                        <h1>Days left</h1>
+                        <span class="tens">0</span><span class="ones">8</span>
                         <h1>Web Technology</h1>
-                        <p>2020 / 02 / 02</p>
                     </div>
                     <div class="ass-content ass2">
                         <h1>System Analysis<br> and Design</h1>
