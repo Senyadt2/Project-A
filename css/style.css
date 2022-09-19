@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 *{
     box-sizing: border-box;
+    font-family: 'Press Start 2P';
 }
 html{   
     scroll-behavior: smooth;
@@ -28,7 +30,7 @@ header{
     z-index: 4;
     margin: 0;
     width: 60px;
-    height: 100vh;
+    transform: translateY(35vh);
     position: fixed;
     display: flex;
     background-image:;
@@ -44,7 +46,7 @@ header{
     background-color: white;
     padding:5px;
     border-radius: 7px;
-    font-size: 14px;
+    font-size: 1rem;
     color: white;
 }
 .side-icons{
@@ -103,12 +105,10 @@ header{
     font-size: 24px;
     color: rgb(28, 214, 206);
     
-    
-   
 }*/
 .explore{
     animation-name: ex;
-    font-size: 24px;
+    font-size: 1.5rem;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -163,14 +163,19 @@ header{
     top: 50%;
     left: 50%;
     position: absolute;
-    width: 500px;
-    height: 350px;
+    width: 30em;
+    height: 25em;
     overflow: hidden;
 }
 .ass-content{
     position: relative;
     width: 100%;
-    font-size: 150px;
+}
+
+.tens,.ones{
+    font-size: 12rem;
+    font-family: sans-serif;
+    font-weight: 600;
 }
 .ass-content .tens{
     color: rgb(130 ,103, 215);
@@ -180,11 +185,10 @@ header{
 }
 .ass-content h1{
     font-size: 30px;
-    font-family: Georgia, Times, 'Times New Roman', serif  ;
 }
 .button-box{
-    transform: translate(450px,-150px);
-    position: fixed;
+    position: relative;
+    transform: translateX(22rem);
     background-color: transparent;
     z-index: 3;
     width: 100%;
@@ -196,11 +200,10 @@ header{
 .button-box button{
 }
 .btn{
-    width: 160px;
-    padding: 10px 0px;
+    width: 5.25em;
+    height: 2.75em;
     margin: 3px;
     z-index: 3;
-    font-family:sans-serif;
     font-size: 32px;
     border:none;
     border-radius: 8px;
@@ -222,4 +225,44 @@ header{
     position: absolute;
     display: flex;
     width: 500%;
+    overflow-x: scroll;
+    z
+}
+@media screen and (max-width: 900px) {
+    .section{
+    }
+    .button-box{
+        flex-direction: row;
+        transform: translateY(-14em);
+    }
+    .btn{
+        font-size: 1.25em;
+    }
+    .explore{
+        font-size: 1.25rem;
+    }
+  }
+  
+@media screen and (max-width: 625px){
+    .btn{
+        font-size: 0.8em;
+        padding: 5px;
+    }
+    .explore{
+        font-size: 0.8rem;
+    }
+    .ass-head{
+        font-size: 1.5em !important;
+    }
+    .ass-box{
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 400px){
+    .btn{
+        font-size: 0.6em;
+    }
+    .explore{
+        font-size: 0.6rem;
+    }
 }

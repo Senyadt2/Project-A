@@ -54,3 +54,16 @@ for(var b=0;b<5;b++){
 //         wrap.style.left = tmp;
 //     })
 // }
+
+var dot = document.querySelector(".dots");
+// var count = 0;
+// dot.textContent += ".";
+// dot.addEventListener("mousedown",function(){
+//     while(true){
+//         count++;
+//         dot.textContent += ".";
+//         if(count == 3){
+//             dot.textContent = "";
+//         }
+//     }
+// })

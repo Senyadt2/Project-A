@@ -20,7 +20,7 @@
     </div>
     <div class="section" id="section1">
         <div class="content">
-            <button onclick="#section2" class="explore">Check your Deadlines...</button>
+            <button href="window.location.href='#section2'" class="explore">Your Deadlines<span class="dots"></span></button>
         </div>
     </div>
 
@@ -37,25 +37,29 @@
                 
                 <div class="wrapper">
                     <div class="ass-content ass1">
-                        <h1>Days left</h1>
+                        <h1 class="ass-head">Days left</h1>
                         <span class="tens">0</span><span class="ones">8</span>
-                        <h1>Web Technology</h1>
+                        <h1 class="ass-head">Web Technology</h1>
                     </div>
                     <div class="ass-content ass2">
-                        <h1>System Analysis<br> and Design</h1>
-                        <p>2020 / 02 / 02</p>
+                        <h1 class="ass-head">Days left</h1>
+                        <span class="tens">0</span><span class="ones">8</span>
+                        <h1 class="ass-head">Data Sturucture and Analysis</h1>
                     </div>
                     <div class="ass-content ass3">
-                        <h1>asdozxvhozixvh</h1>
-                        <p>2020 / 02 / 02</p>
+                        <h1 class="ass-head">Days left</h1>
+                        <span class="tens">0</span><span class="ones">8</span>
+                        <h1 class="ass-head">Systen Analysis and Design</h1>
                     </div>
                     <div class="ass-content ass4">
-                        <h1>uyiu</h1>
-                        <p>2020 / 02 / 02</p>
+                        <h1 class="ass-head">Days left</h1>
+                        <span class="tens">0</span><span class="ones">8</span>
+                        <h1 class="ass-head">Probability and Statistics</h1>
                     </div>
                     <div class="ass-content ass5">
-                        <h1>zxz</h1>
-                        <p>2020 / 02 / 02</p>
+                    <h1 class="ass-head">Days left</h1>
+                        <span class="tens">0</span><span class="ones">8</span>
+                        <h1 class="ass-head">Web Technology</h1>
                     </div>
                 </div>
                 </div>
