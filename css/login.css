@@ -3,7 +3,7 @@
 }
 .form-box.form-show{
     display: block;
-    background-color: black;                        
+    background-color: whitesmoke;                        
     width: 380px;
     height: 450px;
     position: fixed;
@@ -13,9 +13,9 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
+    z-index: 12;
 }
-.button-box{                      
+.form-buttons{                      
     width: 220px;
     margin: 40px auto;
     position: relative;
@@ -24,6 +24,8 @@
 }
 .toggle-btn{              
     padding: 10px 30px;
+    font-family: sans-serif;
+    font-size: 12px !important;
     cursor: pointer;
     background: transparent;
     border:0;

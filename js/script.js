@@ -1,6 +1,5 @@
 var section1 = document.querySelector("#section1");
 var explore = document.querySelector(".explore");
-
 var wt = document.querySelector(".wt");
 var java = document.querySelector(".java");
 var stats = document.querySelector(".stats");
@@ -67,3 +66,38 @@ var dot = document.querySelector(".dots");
 //         }
 //     }
 // })
+
+var menuButton = document.querySelector(".fa-bars");
+var xButton = document.querySelector(".fa-x");
+var menuBox = document.querySelector(".menu-box");
+var login = document.querySelector(".fa-user");
+var register = document.querySelector(".fa-address-book");
+var formbox = document.querySelector(".form-box");
+menuButton.addEventListener("click",function(){
+    xButton.style.display = "block";
+    menuBox.style.display = "block";
+})
+xButton.addEventListener("click",function(){
+    xButton.style.display = "none";
+    menuBox.style.display = "none";
+})
+
+login.addEventListener("click",function(){
+    formbox.classList.add("form-show");
+})
+var x=document.getElementById("login");
+var y=document.getElementById("register");
+var z=document.getElementById("btn");
+function register()
+{
+  x.style.left="-400px";
+  y.style.left="50px";
+  z.style.left="110px";
+
+}
+function login()
+{
+  x.style.left="50px";
+  y.style.left="450px";
+  z.style.left="0px";
+}

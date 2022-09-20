@@ -13,11 +13,14 @@ body,ul{
     margin: 0;
 }
 header{
+    z-index: 6;
     position: fixed;
     justify-content: space-between;
     display: flex;
     padding:20px;
     width: 100%;
+    
+    font-size: 30px;
 }
 .logo{
     height: 50px;
@@ -33,7 +36,6 @@ header{
     transform: translateY(35vh);
     position: fixed;
     display: flex;
-    background-image:;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -49,6 +51,73 @@ header{
     font-size: 1rem;
     color: white;
 }
+.menu-box{
+    display: none;
+    position: fixed;
+    border-radius: 75px 0px 75px 100px;
+    width: 125px;
+    height: 125px;
+    right: 25px;
+    background-color: #c4c4c4;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-delay: 20ms;
+    transition-duration: 5s;
+}
+.clicked{
+    display: none;
+}
+.menu{
+    position: fixed;
+    right: 25px;
+    top: 20px;
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+.fa-bars:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.fa-x:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.fa-address-book:hover > .m-hide,.fa-user:hover > .m-hide,.fa-right-from-bracket:hover > .m-hide{
+    font-size: 12px;
+    position: fixed;
+    display: block;
+    transform: translate(-20px,0px);
+    width: 65px;
+    text-align: center;
+}
+.fa-address-book:hover,.fa-user:hover,.fa-right-from-bracket:hover{
+    transform: scale(1.2);
+}
+.fa-user{
+    top: 40px;
+    right: 105px;
+}
+.fa-address-book{
+    top: 90px;
+    right: 90px;
+}
+.fa-right-from-bracket{
+    top: 105px;
+    right: 40px;
+}
+.fa-x,.fa-address-book,.fa-user,.fa-right-from-bracket{
+    z-index: 11;
+    color:#031046;
+    position: fixed;
+}
+.m-hide{
+    display: none;
+    position: fixed;
+    font-size: 14px;
+    background-color: white;
+    padding: 4px;
+    transform: translate(-80px,20px);
+}
 .side-icons{
     margin: 15px 0;
     color: white;
@@ -58,22 +127,19 @@ header{
     transform: translate(40px,-40px);
     padding: 1px;
     background-color: #37ffb200;
-    
 }
 .section{
     height: 100vh;
     position: relative;
     overflow: auto;
-    
-    scroll-snap-type: y mandatory;
 }
 .content{
     margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
 }
 .content .section{
     background-blend-mode: multiply;

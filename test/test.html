@@ -5,95 +5,50 @@
         <link rel="stylesheet" href="test.css">
     </head>
     <body>
-        <div class="header">
-        
-              <div id="btn"><h1>Assignment-Deadline</h1></div>
-               <button type="button" class="toggle-btn" onclick="web()">Web</button>
-               <button type="button" class="toggle-btn" onclick="java()">Java</button>
-               <button type="button" class="toggle-btn" onclick="pro()">pro</button>
-               <button type="button" class="toggle-btn" onclick="sad()">SAD</button>
-               <button type="button" class="toggle-btn" onclick="dsa()">DSA</button>
-              
-              <div class="containder">
-                    <span id="web" class="input-group">
-                        <h1>Web</h1>
-                        <p>9days left</p>
-                    </span>
-                    <span id="java" class="input-group">
-                        <h1>Java</h1>
-                        <p>10dyas left</p>
-                    </span>
-                    <span id="pro" class="input-group">
-                        <h1>Prob</h1>
-                        <p>12days left</p>
-                    </span>
-                    <span id="sad" class="input-group">
-                        <h1>Sad</h1>
-                        <p>14days left</p>
-                    </span>
-                    <span id="dsa" class="input-group">
-                        <h1>Dsa</h1>
-                        <p>16days left</p>
-                    </span>
-                </div>
-            </div>
-</div>
-
+      <div class="form-box form-show">
+        <div class="button-box">
+          <div id="btn"></div>
+            <button type="button" class="toggle-btn">Log In</button>
+            <button type="button" class="toggle-btn">Register</button>
           </div>
-          
-         </div>
+
+          <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="Enter username"required>
+            <input type="password" class="input-field" placeholder="Enter password"required>
+            
+            <input type="checkbox" class="checkbox"><span class="form-desc">Remember password</span>
+            <button type="submit"class="submit-btn">Log In</button>
+          </form>
+          <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="Enter username"required>
+            <input type="password" class="input-field" placeholder="Enter password"required>
+            <input type="password" class="input-field" placeholder="Enter email"required>
+            <input type="checkbox" class="checkbox"><span class="form-desc">I agree to the terms and conditions</span>
+            <button type="submit"class="submit-btn">Register</button>
+          </form>
+
+        </div>
+
+      </body>
+        
         <script>                          /*silde hune kam yesle garauxha*/
-          var x=document.getElementById("web");
-          var y=document.getElementById("java");
-          var z=document.getElementById("pro");
-          var s=document.getElementById("sad");
-          var d=document.getElementById("dsa");
-          var a=400;         <!--50 px for main-->
-          function java()
+          var x=document.getElementById("login");
+          var y=document.getElementById("register");
+          var z=document.getElementById("btn");
+          function register()
           {
-            x.style.left=-a +"px";
+            x.style.left="-400px";
             y.style.left="50px";
-            z.style.left="400px";
-            s.style.left="800px";
-            d.style.left="1200px";
+            z.style.left="110px";
 
           }
-          function web()
+          function login()
           {
             x.style.left="50px";
             y.style.left="450px";
-            z.style.left="850px";
-            s.style.left="1200px";
-            d.style.left="1600px";
-
-
-          }
-          function pro()
-          {
-            x.style.left="-800px";
-            y.style.left="-400px";
-            z.style.left="50px";
-            s.style.left="400px";
-            d.style.left="800px";
-          }
-          function sad()
-          {
-            x.style.left="-1200px";
-            y.style.left="-800px";
-            z.style.left="-450px";
-            s.style.left="50px";  
-            d.style.left="400px";  
-          }
-          function dsa()
-          {
-            x.style.left="-1600px";
-            y.style.left="-1200px";
-            z.style.left="-800px";
-            s.style.left="-400px";
-            d.style.left="50px";
+            z.style.left="0";
 
           }
         </script>
-  
-    </body>
+        
 </html>
